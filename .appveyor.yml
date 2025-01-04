@@ -84,7 +84,7 @@ build_script:
         }
     }
 
-    ./Chocolatey-AU.build.ps1 -ForcedPackages $forced
+    ./build.ps1 -Task CI -Verbose -ErrorAction Stop
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
