@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>amongus-extraroles</id>
+    <title>Among Us Extra Roles</title>
+    <version>1.3.1</version>
+    <authors>NotHunter101</authors>
+    <owners>Jonas A. Wendorf</owners>
+    <summary>A BepInEx mod for Among Us that adds 4 new roles into the game. This mod can be played on Innersloth servers.</summary>
+    <description>
+*Warning:* This will install the Extra Roles mod to a copy of your original Among Us directory and works for the Steam version only! The copy will be next to the original installation directory and have the suffix " - Extra Roles Mod".  Make sure to start Among Us from that directory to use the mod!
+
+# Extra Roles
+A BepInEx mod for Among Us that adds 4 new roles into the game.
+
+![character infographic](https://cdn.staticaly.com/gh/NotHunter101/ExtraRolesAmongUs/main/characterGraphic.png)
+
+# Notice
+This mod will work on Innersloth servers, but everybody in the lobby has to have the same version of the mod. For help with installing the mod, getting it to work, or fixing an issue, join the [Discord](https://discord.gg/j2MVs4r6cc).
+
+# What does the mod add?
+
+## Medic
+The Medic can give any player a shield that will make them immortal. Although, if The Medic dies, the shield will break.  
+The only exception is The Officer; they will still die if they try to kill a Crewmate.  
+The Medic's other feature shows when they find a corpse: they can get a report that contains clues to the killer's identity.  
+The type of information they get is based on a timer that can be configured inside the host's config file. 
+  
+## Officer
+The Officer is a class of Crewmate that is allowed to kill people, similar to Impostors.  
+Their goal is to locate the Impostor and deliver vigilante justice, but if they accidentally shoot a Crewmate, they die instead.  
+  
+## Engineer
+The Engineer can repair one emergency per game from anywhere on the entire map.  
+The other ablity of The Engineer is that they are able to use the vents that were previously exclusive to Impostors.  
+
+## Joker
+The Joker is interesting; they aren't part of the Crewmates **or** Impostors, and they can only win by being falsely convicted as an Impostor.  
+If The Joker get's voted off the ship, the game will end instantly.  
+The Joker also has no tasks.  
+
+*Please note* This is an automatically updated package.  If the package is outdated for more than two days, please [let me know](https://github.com/jonasw234/au-packages/issues).
+    </description>
+    <projectUrl>https://github.com/NotHunter101/ExtraRolesAmongUs</projectUrl>
+    <projectSourceUrl>https://github.com/NotHunter101/ExtraRolesAmongUs</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/NotHunter101/ExtraRolesAmongUs/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/jonasw234/au-packages/tree/master/amongus-extraroles</packageSourceUrl>
+    <tags>amongus among-us crewmate medic officer engineer joker impostor game mod modification</tags>
+    <copyright>NotHunter101</copyright>
+    <licenseUrl>https://github.com/NotHunter101/ExtraRolesAmongUs</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>https://github.com/NotHunter101/ExtraRolesAmongUs/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+
+
+

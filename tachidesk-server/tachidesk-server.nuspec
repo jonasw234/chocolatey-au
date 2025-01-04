@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>tachidesk-server</id>
+    <title>Suwayomi</title>
+    <version>1.1.1.1-r1599-rc</version>
+    <authors>Suwayomi</authors>
+    <owners>Jonas A. Wendorf</owners>
+    <summary>A rewrite of Tachiyomi for the Desktop</summary>
+    <description>
+# What is Suwayomi?
+![](https://cdn.statically.io/gh/Suwayomi/Tachidesk/39490ce7/server/src/main/resources/icon/faviconlogo.png)
+
+A free and open source manga reader server that runs extensions built for [Tachiyomi](https://tachiyomi.org/). 
+
+Suwayomi is an independent Tachiyomi compatible software and is **not a Fork of** Tachiyomi.
+
+Suwayomi-Server is as multi-platform as you can get. Any platform that runs java and/or has a modern browser can run it. This includes Windows, Linux, macOS, chrome OS, etc. Follow [Downloading and Running the app](https://github.com/Suwayomi/Suwayomi-Server?tab=readme-ov-file#downloading-and-running-the-app) for installation instructions.
+
+Ability to sync with Tachiyomi is a planned feature, for more info look [here](https://github.com/Suwayomi/Suwayomi-Server?tab=readme-ov-file#syncing-with-tachiyomi).
+
+## Is this application usable? Should I test it?
+Here is a list of current features:
+
+- Installing and executing Tachiyomi's Extensions, So you'll get the same sources
+- A library to save your mangas and categories to put them into
+- Searching and browsing installed sources
+- Ability to download Manga for offline read
+- Backup and restore support powered by Tachiyomi-compatible Backups
+- Viewing latest updated chapters.
+
+**Note:** These are capabilities of Tachidesk-Server, the actual working support is provided by each front-end app, checkout their respective readme for more info.
+
+[Full README](https://github.com/Suwayomi/Suwayomi-Server)
+
+*Please note* This is an automatically updated package.  If the package is outdated for more than two days, please [let me know](https://github.com/jonasw234/au-packages/issues).
+
+Tachidesk-Server has been [renamed to Suwayomi](https://github.com/Suwayomi/Suwayomi-Server/issues/534).
+
+Pre-Releases are available.
+    </description>
+    <releaseNotes>https://github.com/Suwayomi/Suwayomi-Server/releases</releaseNotes>
+    <projectUrl>https://github.com/Suwayomi/Suwayomi-Server</projectUrl>
+    <projectSourceUrl>https://github.com/Suwayomi/Suwayomi-Server</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/Suwayomi/Suwayomi-Server/issues</bugTrackerUrl>
+    <docsUrl>https://github.com/Suwayomi/Suwayomi-Server/wiki</docsUrl>
+    <packageSourceUrl>https://github.com/jonasw234/au-packages/tree/master/tachidesk-server</packageSourceUrl>
+    <tags>manga mangareader manga-reader manga-downloader tachiyomi tachidesk tachidesk-server suwayomi</tags>
+    <copyright>Suwayomi</copyright>
+    <licenseUrl>https://github.com/Suwayomi/Suwayomi-Server/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.statically.io/gh/Suwayomi/Tachidesk/39490ce7/server/src/main/resources/icon/faviconlogo.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

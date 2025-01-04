@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>hashcat</id>
+    <title>hashcat</title>
+    <version>6.2.5</version>
+    <authors>hashcat</authors>
+    <owners>Jonas A. Wendorf</owners>
+    <summary>World's fastest and most advanced password recovery utility</summary>
+    <description>
+# hashcat
+**hashcat** is the world's fastest and most advanced password recovery utility, supporting five unique modes of attack for over 300 highly-optimized hashing algorithms. hashcat currently supports CPUs, GPUs, and other hardware accelerators on Linux, Windows, and macOS, and has facilities to help enable distributed password cracking.
+
+## GPU Driver requirements
+- AMD GPUs on Linux require "RadeonOpenCompute (ROCm)" Software Platform (3.1 or later)
+- AMD GPUs on Windows require "AMD Radeon Adrenalin 2020 Edition" (20.2.2 or later)
+- Intel CPUs require "OpenCL Runtime for Intel Core and Intel Xeon Processors" (16.1.1 or later)
+- NVIDIA GPUs require "NVIDIA Driver" (440.64 or later) and "CUDA Toolkit" (9.0 or later)
+
+*Please note* This is an automatically updated package.  If the package is outdated for more than two days, please [let me know](https://github.com/jonasw234/au-packages/issues).
+    </description>
+    <projectUrl>https://hashcat.net/hashcat/</projectUrl>
+    <projectSourceUrl>https://github.com/hashcat/hashcat</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/hashcat/hashcat/issues</bugTrackerUrl>
+    <docsUrl>https://hashcat.net/wiki/</docsUrl>
+    <iconUrl>https://cdn.statically.io/gh/jonasw234/au-packages/master/hashcat/favicon.ico</iconUrl>
+    <packageSourceUrl>https://github.com/jonasw234/au-packages/tree/master/hashcat</packageSourceUrl>
+    <tags>hashcat password hash cracker dictionary rule-based toggle-case combiantor bruteforce brute force brute-force hybrid association attack</tags>
+    <copyright>hashcat</copyright>
+    <licenseUrl>https://github.com/hashcat/hashcat/blob/master/docs/license.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>https://github.com/hashcat/hashcat/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

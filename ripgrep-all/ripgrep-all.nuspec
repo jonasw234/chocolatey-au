@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ripgrep-all</id>
+    <title>Ripgrep-All</title>
+    <version>0.10.6</version>
+    <authors>phiresky</authors>
+    <owners>Jonas A. Wendorf</owners>
+    <summary>rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.</summary>
+    <description>
+rga is a line-oriented search tool that allows you to look for a regex in a multitude of file types. rga wraps the awesome ripgrep and enables it to search in pdf, docx, sqlite, jpg, movie subtitles (mkv, mp4), etc.
+    </description>
+    <projectUrl>https://phiresky.github.io/blog/2019/rga--ripgrep-for-zip-targz-docx-odt-epub-jpg/</projectUrl>
+    <projectSourceUrl>https://github.com/phiresky/ripgrep-all</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/phiresky/ripgrep-all/issues</bugTrackerUrl>
+    <docsUrl>https://github.com/phiresky/ripgrep-all/blob/master/README.md</docsUrl>
+    <packageSourceUrl>https://github.com/jonasw234/au-packages/tree/master/ripgrep-all</packageSourceUrl>
+    <tags>search ripgrep rg ripgrep-all rga</tags>
+    <copyright>phiresky</copyright>
+    <licenseUrl>https://github.com/phiresky/ripgrep-all/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+       <dependency id="ripgrep" />
+       <dependency id="pandoc" />
+       <dependency id="poppler" />
+       <dependency id="ffmpeg" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
