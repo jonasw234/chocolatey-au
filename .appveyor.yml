@@ -84,6 +84,11 @@ build_script:
         }
     }
 
+    if (-not (Get-Module -ListAvailable chocolatey-au)) {
+        Write-Host "Getting Chocolatey-AU module"
+        Install-Module chocolatey-au -Scope CurrentUser -Force
+    }
+
     ./update_all.ps1 -ForcedPackages $forced
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
