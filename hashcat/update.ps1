@@ -3,7 +3,7 @@ Import-Module Chocolatey-AU
 $releases = 'https://api.github.com/repos/hashcat/hashcat/releases/latest'
 
 function global:au_SearchReplace {
-   @{
+    @{
         ".\tools\chocolateyInstall.ps1" = @{
             "(?i)(^\s*url64Bit\s*=\s*)('.*')"   = "`$1'$($Latest.URL)'"
             "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum)'"
