@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 
 $packageToolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 $toolsDir = Get-ToolsLocation
@@ -20,7 +20,7 @@ if (-not (Test-Path -Path $installPath)) {
 }
 
 # Download the .exe file directly to the install path
-Get-ChocolateyWebFile -PackageName krokiet -Url64bit $url64 -Checksum64 $checksum64 -ChecksumType64 SHA256 -FileFullPath $binPath
+Get-ChocolateyWebFile -PackageName krokiet -Url64bit $url64 -Checksum64 $checksum64 -ChecksumType64 $checksumType64 -FileFullPath $binPath
 
 $shortcutArgs = @{
     targetPath       = $binPath
