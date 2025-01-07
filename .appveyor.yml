@@ -89,7 +89,9 @@ build_script:
         Install-Module chocolatey-au -Scope CurrentUser -Force -AllowClobber
     }
 
-    Update-AUPackages @{ Push = $true }
+    $options = New-Object System.Collections.Specialized.OrderedDictionary
+    $options.Add("Push", $true)
+    Update-AUPackages $options
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
