@@ -4,7 +4,7 @@
   <metadata>
     <id>titlecase</id>
     <title>Title Case</title>
-    <version>0.10.0</version>
+    <version>3.3.0</version>
     <authors>wezm</authors>
     <owners>Jonas A. Wendorf</owners>
     <summary>A tool and Rust crate for making text title case</summary>

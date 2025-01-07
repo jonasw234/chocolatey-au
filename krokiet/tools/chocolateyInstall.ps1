@@ -10,8 +10,8 @@ $iconPath = Join-Path $packageToolsDir 'icon_about.ico'
 $desktopShortcutPath = "$($ENV:PUBLIC)\Desktop\Krokiet.lnk"
 $startmenuShortcutPath = "$($ENV:ProgramData)\Microsoft\Windows\Start Menu\Programs\Krokiet.lnk"
 
-$url64 = 'https://github.com/qarmin/czkawka/releases/download/7.0.0/windows_krokiet.exe'
-$checksum64 = 'c98191d420f3c66f56fab9e232e604c354ecae30513b79497f8430f6111be42c'
+$url64 = 'https://github.com/qarmin/czkawka/releases/download/8.0.0/windows_krokiet_gui_winversion.exe'
+$checksum64 = 'af2d3672ac86d2c5b9a56caacdd1e39fd721f91925b2e111d1d3fc7ab4562fb4'
 $checksumType64 = 'sha256'
 
 # Ensure the installation path exists
