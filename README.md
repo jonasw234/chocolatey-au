@@ -6,7 +6,7 @@
 This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).  
 
 # Packages
-Chocolatey packages for some more awesome software that didn’t have packages yet.
+[Chocolatey](2025-01-07_chocolatey.md) packages for some more awesome software that didn’t have packages yet.
 
 ## ripgrep-all
 rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
