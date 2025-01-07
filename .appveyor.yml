@@ -86,7 +86,7 @@ build_script:
 
     if (-not (Get-Module -ListAvailable chocolatey-au)) {
         Write-Host "Getting Chocolatey-AU module"
-        Install-Module chocolatey-au -Scope CurrentUser -Force
+        Install-Module chocolatey-au -Scope CurrentUser -Force -AllowClobber
     }
 
     ./update_all.ps1 -ForcedPackages $forced
