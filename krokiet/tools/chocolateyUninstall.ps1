@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 $desktopShortcutPath    = "$($ENV:PUBLIC)\Desktop\Krokiet.lnk"
 $startmenuShortcutPath  = "$($ENV:ProgramData)\Microsoft\Windows\Start Menu\Programs\Krokiet.lnk"
 
