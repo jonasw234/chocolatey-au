@@ -91,7 +91,7 @@ build_script:
 
     $options = New-Object System.Collections.Specialized.OrderedDictionary
     $options.Add("Push", $true)
-    Update-AUPackages $options
+    Update-AUPackages -Options $options
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
