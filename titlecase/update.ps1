@@ -22,7 +22,7 @@ function global:au_GetLatest {
     $body = ($download_page.Content | ConvertFrom-Json).body
     $body -match $re
     $url64 = $matches[0]
-    $version = $url64 -split '[-]|.zip' | select -First 1 -Skip 1
+    $version = $url64 -split '[-]|.zip' | Select-Object -First 1 -Skip 1
     $version = $version.substring(1)
 
     @{
