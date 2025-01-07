@@ -17,7 +17,7 @@ function global:au_GetLatest {
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $file    = 'windows_krokiet\.exe$'
+    $file    = 'windows_krokiet(_gui_winversion)?\.exe$'
     $url     = (($download_page.Content | ConvertFrom-Json).assets | Where-Object browser_download_url -Match $file).browser_download_url
     $version = $url -split '\/download\/|\/' + $file
     $version = $version[1]
