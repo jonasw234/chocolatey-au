@@ -89,7 +89,7 @@ build_script:
         Install-Module chocolatey-au -Scope CurrentUser -Force -AllowClobber
     }
 
-    Update-AUPackages
+    Update-AUPackages @{ Push = $true }
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
