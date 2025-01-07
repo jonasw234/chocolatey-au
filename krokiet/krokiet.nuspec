@@ -4,7 +4,7 @@
   <metadata>
     <id>krokiet</id>
     <title>Krokiet</title>
-    <version>7.0.0</version>
+    <version>8.0.0</version>
     <authors>Rafał Mikrut</authors>
     <owners>Jonas A. Wendorf</owners>
     <summary>Slint version of Czkawka (tch•kav•ka, hiccup), a simple, fast and free app to remove unnecessary files from your computer.</summary>
