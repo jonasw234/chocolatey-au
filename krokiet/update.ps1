@@ -3,7 +3,7 @@ Import-Module Chocolatey-AU
 $releases = 'https://api.github.com/repos/qarmin/czkawka/releases/latest'
 
 function global:au_SearchReplace {
-   @{
+    @{
         ".\tools\chocolateyinstall.ps1" = @{
             "(^[$]url64\s*=\s*)('.*')" = "`$1'$( $Latest.URL64 )'"           #1
             "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$( $Latest.Checksum64 )'"      #2
