@@ -17,8 +17,8 @@ function global:au_GetLatest {
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $re      = 'hashcat-(\d\.)+\d\.7z$'
-    $url     = (($download_page.Content | ConvertFrom-Json).assets | Where-Object browser_download_url -match $re).browser_download_url
+    $re = 'hashcat-(\d\.)+\d\.7z$'
+    $url = (($download_page.Content | ConvertFrom-Json).assets | Where-Object browser_download_url -Match $re).browser_download_url
     $version = $url -split '\/v|\/' + $re
     $version = $version[0]
 
