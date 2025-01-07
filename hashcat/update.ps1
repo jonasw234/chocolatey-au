@@ -19,8 +19,8 @@ function global:au_GetLatest {
 
     $re = 'hashcat-(\d\.)+\d\.7z$'
     $url = (($download_page.Content | ConvertFrom-Json).assets | Where-Object browser_download_url -Match $re).browser_download_url
-    $version = $url -split '\/v|\/' + $re
-    $version = $version[0]
+    $version = $url -split '\/download\/v|\/' + $re
+    $version = $version[1]
 
     return @{
         URL     = $url
