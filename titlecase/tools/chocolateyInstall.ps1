@@ -1,7 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
-$download_dir = "$Env:TEMP\chocolatey\$packageName\$Env:ChocolateyPackageVersion"
 
 $packageArgs = @{
   packageName    = 'titlecase'
