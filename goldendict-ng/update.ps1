@@ -18,7 +18,7 @@ function global:au_GetLatest {
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $re32 = 'GoldenDict-.+\.exe'
+    $re32 = 'GoldenDict-.+installer\.exe'
     $json = ($download_page.Content | ConvertFrom-Json).assets
     $url32 = ($json | Where-Object browser_download_url -match $re32).browser_download_url | Select-Object -Last 1
     $version = ((($url32 -split '/')[7] -split 'v')[1] -split '-')[0]
