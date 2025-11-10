@@ -5,6 +5,10 @@
 
 This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).  
 
+# Deprecation Warning
+
+Since I stopped using Windows, this repository is now in maintenance mode. I will not be adding new packages and might be slow/need your support to update failing packages. Thank you for your understanding.
+
 # Packages
 [Chocolatey](2025-01-07_chocolatey.md) packages for some more awesome software that didn’t have packages yet.
 
@@ -73,3 +77,4 @@ World's fastest and most advanced password recovery utility
 
 ## Titlecase
 A tool and Rust crate for making text title case
+
